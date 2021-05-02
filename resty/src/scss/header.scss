@@ -1,0 +1,11 @@
+header{
+    background-color: rgb(66, 66, 66);
+    height: 15vh;
+    text-align: center;
+    h1{
+        color: #fff;
+        font-size: 2.5rem;
+        margin: 0;
+        transform: translateY(calc(2.5rem - 50%));
+    }
+}
