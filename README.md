@@ -2,6 +2,7 @@
 ### RESTy Phase 2: Connect RESTy with APIs, running live requests
 
 [Netlify](https://hamza-resry.netlify.app/)<br>
+[GitHub Page](https://hamzashamoun96.github.io/resty/)<br>
 [Pull Request](https://github.com/hamzashamoun96/resty/pull/4)
 
 ## UML
