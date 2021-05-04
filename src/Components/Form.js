@@ -4,7 +4,9 @@ import "../scss/form.scss";
 class Form extends React.Component {
   result = async (e) => {
     e.preventDefault();
-    const raw = await fetch("https://swapi.dev/api/people/");
+    
+    let url = e.target.url.value;
+    const raw = await fetch(url);
     const data = await raw.json();
     
     this.props.dataHandler(raw, data);
