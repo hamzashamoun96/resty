@@ -47,15 +47,18 @@
         color: white;
       }
   }
-  section {
-    background-color: #ccc;
-    width: 98%;
-    height: 67%;
-    p{
-        float: left;
-        margin-left: 25px;
-        font-size: 1.2rem;
-    }  
 }
-
+section {
+  position: absolute;
+  top: 240px;
+  left: 15px;
+  background-color: rgb(212, 212, 212);
+  width: 98vw;
+  height: 50vh;
+  overflow-y: scroll;
+  // p{
+  //     float: left;
+  //     margin-left: 25px;
+  //     font-size: 1.2rem;
+  // }  
 }

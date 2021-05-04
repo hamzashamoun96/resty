@@ -1,8 +1,8 @@
 # RESTy
-### RESTy Phase 1: Begin work on the RESTy API testing application
+### RESTy Phase 2: Connect RESTy with APIs, running live requests
 
 [Netlify](https://hamza-resry.netlify.app/)<br>
-[Pull Request](https://github.com/hamzashamoun96/resty/pull/3)
+[Pull Request](https://github.com/hamzashamoun96/resty/pull/4)
 
 ## UML
 
