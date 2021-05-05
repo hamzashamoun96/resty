@@ -1,25 +1,33 @@
-import React from 'react';
+import React from "react";
+import { If, Then, Else } from "react-if";
 import "../scss/form.scss";
-import JSONPretty from 'react-json-pretty';
-import 'react-json-pretty/themes/monikai.css';
+import JSONPretty from "react-json-pretty";
+import "react-json-pretty/themes/monikai.css";
+import Loading from "./Loading.js";
 
-function Results({rawPeople , people}) {
+function Results({ people }) {
+  return (
+    <If condition={people.length === 0}>
+      <Then>
+        <section id="section"></section>
+      </Then>
 
-    if(people.count){
-        return ( 
-        
-                <section id="section">
-        
-        <JSONPretty id="json-pretty" data={people}></JSONPretty>
-                </section>
-              );
-
-    }else{
-        return(
-            <section id="section"></section>
-        )
-    }
-
+      <Else>
+        <If condition={people}>
+          <Then>
+            <section id="section">
+              <JSONPretty id="json-pretty" data={people}></JSONPretty>
+            </section>
+          </Then>
+          <Else>
+          <section id="section">
+              <Loading />
+            </section>
+          </Else>
+        </If>
+      </Else>
+    </If>
+  );
 }
 
 export default Results;

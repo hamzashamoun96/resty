@@ -4,22 +4,21 @@ import Header from "./Components/Header.js";
 import Footer from "./Components/Footer.js";
 import From from "./Components/Form.js";
 import Results from "./Components/Results.js";
-
-
+import History from "./Components/History.js";
 
 class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      rawPeople: [],
       people: [],
+      history: [],
     };
   }
 
-  dataHandler = (raw, result) => {
+  dataHandler = (result , history) => {
     this.setState({
-      rawPeople: raw,
       people: result,
+      history:history,
     });
   };
 
@@ -27,8 +26,9 @@ class App extends React.Component {
     return (
       <>
         <Header />
-        <From  dataHandler={this.dataHandler} />
-        <Results rawPeople={this.state.rawPeople} people={this.state.people} />
+        <From dataHandler={this.dataHandler} />
+        <Results people={this.state.people} />
+        <History history={this.state.history}/>
         <Footer />
       </>
     );
