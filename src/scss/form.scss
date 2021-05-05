@@ -5,9 +5,12 @@
   flex-direction: column;
   align-items: center;
   form {
-    width: 80%;
+    width: 95%;
     height: 30%;
-    text-align: center;
+    #bodyArea{
+      position:absolute;
+      margin-top: 12px;
+    }
     #url {
       width: 50%;
       height: 20%;
@@ -34,6 +37,7 @@
     }
     .checkmark {
         position: absolute;
+        text-align: center;
         top: 50%;
         left: 0;
         height: 50px;
@@ -53,12 +57,7 @@ section {
   top: 240px;
   left: 15px;
   background-color: rgb(212, 212, 212);
-  width: 98vw;
+  width: 60vw;
   height: 50vh;
   overflow-y: scroll;
-  // p{
-  //     float: left;
-  //     margin-left: 25px;
-  //     font-size: 1.2rem;
-  // }  
 }

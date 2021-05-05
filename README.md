@@ -1,9 +1,9 @@
 # RESTy
-### RESTy Phase 2: Connect RESTy with APIs, running live requests
+### RESTy Phase 3: Add conditional rendering to RESTy
 
 [Netlify](https://hamza-resry.netlify.app/)<br>
 [GitHub Page](https://hamzashamoun96.github.io/resty/)<br>
-[Pull Request](https://github.com/hamzashamoun96/resty/pull/4)
+[Pull Request](https://github.com/hamzashamoun96/resty/pull/6)
 
 ## UML
 
