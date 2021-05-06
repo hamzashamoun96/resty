@@ -56,8 +56,8 @@ function getOldQuery(e){
     let url = e.target.parentElement.children[1].innerHTML;
     let body = e.target.parentElement.children[2].innerHTML;
 
-    document.querySelector(`#Method`).innerHTML = "Method : " +" "+ method;
-    document.querySelector('#URL').innerHTML = "URL : "+" "+url;
-    document.querySelector('#Body').innerHTML = "Body : "+" "+body;
+    document.querySelector(`#Method`).innerHTML = "Method : " + method;
+    document.querySelector('#URL').innerHTML = "URL : "+url;
+    document.querySelector('#Body').innerHTML = "Body : "+body;
 }
 export default History;
