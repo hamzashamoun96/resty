@@ -1,7 +1,7 @@
 import React from "react";
 import { If, Then, Else } from "react-if";
 import "../scss/form.scss";
-import JSONPretty from "react-json-pretty";
+import ReactJson from "react-json-view";
 import "react-json-pretty/themes/monikai.css";
 import Loading from "./Loading.js";
 
@@ -16,7 +16,16 @@ function Results({ people }) {
         <If condition={people}>
           <Then>
             <section id="section">
-              <JSONPretty id="json-pretty" data={people}></JSONPretty>
+               <h2>Response</h2>
+              <ReactJson
+                src={people}
+                name="Response"
+                // theme={"grayscale:inverted"}
+                iconStyle={'triangle'}
+                collapsed={false}
+                enableClipboard={false}
+                displayDataTypes={false}
+              />
             </section>
           </Then>
           <Else>

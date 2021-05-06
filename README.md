@@ -1,9 +1,9 @@
 # RESTy
-### RESTy Phase 3: Add conditional rendering to RESTy
+### RESTy Phase 4: Add routing and conditional rendering to RESTy
 
 [Netlify](https://hamza-resry.netlify.app/)<br>
 [GitHub Page](https://hamzashamoun96.github.io/resty/)<br>
-[Pull Request](https://github.com/hamzashamoun96/resty/pull/6)
+[Pull Request](https://github.com/hamzashamoun96/resty/pull/8)
 
 ## UML
 
