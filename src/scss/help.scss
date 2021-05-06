@@ -1,0 +1,49 @@
+#div{
+    display: flex;
+    height: 75vh;
+    justify-content:center;
+    align-items: center;
+    background-color: olive;
+    p{
+        font-size: 3rem;
+    }
+}
+#a,#b,#c,#d{
+    margin-right: 15px;
+}
+.a{
+   color: goldenrod;
+    position: relative;
+    animation-name: example1;
+    animation-duration:1s;
+    animation-timing-function: linear;
+    animation-iteration-count:infinite;
+
+}
+.b{
+    color: gold;
+    position: relative;
+    animation-name: example2;
+    animation-duration:1s;
+    animation-timing-function: linear;
+    animation-iteration-count:infinite;
+    // animation-delay:700ms;
+}
+@keyframes example1 {
+    0%   {top:0px;}
+    25%  {top:10px;}
+   
+    50%  {top:0px;}
+    
+    75%  {top:-10px;}
+    100% {top:0px;}
+  }
+@keyframes example2 {
+    0%   {top:0px;}
+    25%  {top:-10px;}
+   
+    50%  {top:0px;}
+    
+    75%  {top:10px;}
+    100% {top:0px;}
+  }

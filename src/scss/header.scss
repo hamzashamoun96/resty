@@ -8,4 +8,22 @@ header{
         margin: 0;
         transform: translateY(calc(2.5rem - 50%));
     }
+    ul{
+        display: flex;
+        li{
+            margin: 0 75px 0px 0;
+            display: inline-block;
+            color: black;
+            a{
+                // font-size: 1.1rem;
+                font-weight: 500;
+                text-decoration: none;
+                color: white;
+            }
+        }
+        .active{
+            // color: black;
+            border-bottom: 2px solid #fff;
+        }
+    }
 }
