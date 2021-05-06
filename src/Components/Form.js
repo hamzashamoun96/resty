@@ -66,11 +66,10 @@ class Form extends React.Component {
       
       if (localStorage.getItem("history")) {
         historyArr = JSON.parse(localStorage.getItem("history"));
-        if(historyArr.find(e=>{
-          if(e.method === history.method && e.url === history.url && e.body === history.body){
-            return 1
-          }
-        })){
+        if(historyArr.find(e=>(e.method === history.method && e.url === history.url && e.body === history.body)
+          
+          
+        )){
           console.log("FIND ONE")
         }else{
           historyArr.push(history);
